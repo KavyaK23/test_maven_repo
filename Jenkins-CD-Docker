@@ -4,11 +4,11 @@ pipeline {
     }
     
     environment {
-    dockerimagename = "my_"
+    dockerimagename = "kavyakavya/my_private_reg"
     registry_name = "registry.hub.docker.com"
     registry_url = "https://registry.hub.docker.com"
-    registryCredential = 'my-docker-private-id'
-    container_name= "vijaylokesh-my-tomcat"
+    registryCredential = 'private_key'
+    container_name= "my-tomcat-container"
 	  
     }    
 
