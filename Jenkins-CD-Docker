@@ -1,10 +1,10 @@
 pipeline {
    agent {
-       label 'CD-Jenkins-Slave'
+       label 'slave'
     }
     
     environment {
-    dockerimagename = "vijaylokesh/my-tomcat:latest"
+    dockerimagename = "my_"
     registry_name = "registry.hub.docker.com"
     registry_url = "https://registry.hub.docker.com"
     registryCredential = 'my-docker-private-id'
